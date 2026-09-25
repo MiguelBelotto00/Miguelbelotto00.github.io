@@ -1,0 +1,146 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: var(--text-h);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 2.5rem 1rem 3rem;
+}
+
+.card {
+  width: 70%;
+  max-width: 820px;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: var(--code-bg);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 2rem 1.75rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card h1 {
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.about {
+  margin-bottom: 1.75rem;
+}
+
+.about a {
+  color: var(--text-h);
+}
+
+.music {
+  width: 100%;
+  margin-top: auto;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #0e060a;
+  color: #f3e6d0;
+  padding: 2rem 15% 2.5rem;
+}
+
+.music-embeds {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.music-embeds iframe {
+  border: 0;
+  border-radius: 12px;
+}
+
+.experience {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience h2 {
+  margin-bottom: 4px;
+}
+
+.company {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.company a {
+  color: inherit;
+}
+
+.meta {
+  font-size: 0.9rem;
+  margin: 2px 0 8px;
+}
+
+.summary {
+  white-space: pre-line;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 92%;
+  }
+
+  .music {
+    padding: 1.75rem 1.15rem 2rem;
+  }
+
+  .card {
+    padding: 1.5rem 1.15rem 1.15rem;
+  }
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
